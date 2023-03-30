@@ -1,0 +1,238 @@
+<table>
+<thead>
+<tr>
+<th>COMMAND</th>
+<th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>vim filename</strong></td>
+<td>To start Vim from the shell prompt</td>
+</tr>
+<tr>
+<td><strong>:q</strong></td>
+<td>To close the help window.</td>
+</tr>
+<tr>
+<td><strong>:q!</strong></td>
+<td>Exit vim Without Saving</td>
+</tr>
+<tr>
+<td><strong>:wq</strong></td>
+<td>Exit vim by save the changes.</td>
+</tr>
+<tr>
+<td><strong>x</strong></td>
+<td>To delete the character at the cursor</td>
+</tr>
+<tr>
+<td><strong>i</strong></td>
+<td>Insert before the cursor</td>
+</tr>
+<tr>
+<td><strong>a</strong></td>
+<td>To append text after the line</td>
+</tr>
+<tr>
+<td><strong>dw</strong></td>
+<td>To delete from the cursor up to the next word.</td>
+</tr>
+<tr>
+<td><strong>de</strong></td>
+<td>To delete from the cursor up to the end of the word.</td>
+</tr>
+<tr>
+<td><strong>d$</strong></td>
+<td>To delete from the cursor to the end of a line.</td>
+</tr>
+<tr>
+<td><strong>dd</strong></td>
+<td>To delete a whole line.</td>
+</tr>
+<tr>
+<td><strong>2w</strong></td>
+<td>To repeat a motion prepend it with a number</td>
+</tr>
+<tr>
+<td><strong>0</strong></td>
+<td>To move to the start of the line use a zero</td>
+</tr>
+<tr>
+<td><strong>u</strong></td>
+<td>To undo previous actions.</td>
+</tr>
+<tr>
+<td><strong>U</strong></td>
+<td>To undo all the changes on a line.</td>
+</tr>
+<tr>
+<td><strong>CTRL-R</strong></td>
+<td>Redo</td>
+</tr>
+<tr>
+<td><strong>p</strong></td>
+<td>To put back text that has just been deleted.</td>
+</tr>
+<tr>
+<td><strong>r</strong></td>
+<td>To replace the character under the cursor.</td>
+</tr>
+<tr>
+<td><strong>ce</strong></td>
+<td>To change from the cursor to the end of the word.</td>
+</tr>
+<tr>
+<td><strong>c$</strong></td>
+<td>To change to the end of a line.</td>
+</tr>
+<tr>
+<td><strong>CTRL-G</strong></td>
+<td>Displays your location in the file and the file status.</td>
+</tr>
+<tr>
+<td><strong>gg</strong></td>
+<td>Moves to the first line.</td>
+</tr>
+<tr>
+<td><strong>G</strong></td>
+<td>Moves to the end of the file.</td>
+</tr>
+<tr>
+<td><strong>number G</strong></td>
+<td>To Moves to that line number.</td>
+</tr>
+<tr>
+<td><strong>/phrase</strong></td>
+<td>To searches FORWARD for the phrase.</td>
+</tr>
+<tr>
+<td><strong>?phrase</strong></td>
+<td>To searches BACKWARD for the phrase.</td>
+</tr>
+<tr>
+<td><strong>n</strong></td>
+<td>To find the next occurrence in the same direction(After a search type).</td>
+</tr>
+<tr>
+<td><strong>N</strong></td>
+<td>To search in the opposite direction.</td>
+</tr>
+<tr>
+<td><strong>CTRL-O</strong></td>
+<td>Takes you back to older positions.</td>
+</tr>
+<tr>
+<td><strong>CTRL-I</strong></td>
+<td>To newer positions.</td>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td>the cursor is on a (,),[,],{, or } goes to its match.</td>
+</tr>
+<tr>
+<td><strong>:s/old/new</strong></td>
+<td>To substitute new for the first old in a line.</td>
+</tr>
+<tr>
+<td><strong>:s/old/new/g</strong></td>
+<td>To substitute new for all &#39;old&#39;s on a line.</td>
+</tr>
+<tr>
+<td><strong>:#,#s/old/new/g</strong></td>
+<td>To substitute phrases between two line #&#39;s</td>
+</tr>
+<tr>
+<td><strong>:%s/old/new/g</strong></td>
+<td>To substitute all occurrences in the file.</td>
+</tr>
+<tr>
+<td><strong>:%s/old/new/gc</strong></td>
+<td>To ask for confirmation each time add &#39;c&#39;.</td>
+</tr>
+<tr>
+<td><strong>:!command</strong></td>
+<td>To executes an external command.</td>
+</tr>
+<tr>
+<td><strong>:w FILENAME</strong></td>
+<td>writes the current Vim file to disk with name FILENAME.</td>
+</tr>
+<tr>
+<td><strong>v  motion :w FILENAME</strong></td>
+<td>saves the Visually selected lines in file</td>
+</tr>
+<tr>
+<td><strong>:r FILENAME</strong></td>
+<td>retrieves disk file FILENAME and puts it below the cursor position.</td>
+</tr>
+<tr>
+<td><strong>:r !dir</strong></td>
+<td>reads the output of the dir command and puts it below the cursor position.</td>
+</tr>
+<tr>
+<td><strong>o</strong></td>
+<td>To open a line BELOW the cursor and start Insert mode.</td>
+</tr>
+<tr>
+<td><strong>O</strong></td>
+<td>To open a line ABOVE the cursor.</td>
+</tr>
+<tr>
+<td><strong>a</strong></td>
+<td>To insert text AFTER the cursor.</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td>To insert text after the end of the line.</td>
+</tr>
+<tr>
+<td><strong>e</strong></td>
+<td>command moves to the end of a word.</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>Operator yanks (copies) text,  </td>
+</tr>
+<tr>
+<td><strong>p</strong></td>
+<td>puts (pastes) it.</td>
+</tr>
+<tr>
+<td><strong>r</strong></td>
+<td>To replace the character under the cursor.</td>
+</tr>
+<tr>
+<td><strong>R</strong></td>
+<td>Enters Replace mode until  ESC  is pressed.</td>
+</tr>
+<tr>
+<td><strong>:set xxx</strong></td>
+<td>Sets the option &quot;xxx&quot;.Some options are: <strong>ic</strong> &#39;ignorecase&#39; ignore upper/lower case when searching <strong>is</strong> &#39;incsearch&#39;    show partial matches for a search phrase <strong>hls</strong> &#39;hlsearch&#39;    highlight all matching phrases You can either use the long or the short option name.</td>
+</tr>
+<tr>
+<td><strong>:set noic</strong></td>
+<td>Prepend &quot;no&quot; to switch an option off</td>
+</tr>
+<tr>
+<td><strong>:help</strong></td>
+<td>To open a help window.</td>
+</tr>
+<tr>
+<td><strong>:help cmd</strong></td>
+<td>To find help on cmd .</td>
+</tr>
+<tr>
+<td><strong>CTRL-W</strong></td>
+<td>To jump to another window.</td>
+</tr>
+<tr>
+<td><strong>CTRL-D</strong></td>
+<td>To see possible completions.</td>
+</tr>
+<tr>
+<td><strong>TAB</strong></td>
+<td>To use one completion.</td>
+</tr>
+</tbody>
+</table>
