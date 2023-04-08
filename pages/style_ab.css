@@ -101,7 +101,7 @@ nav a:hover {
 
 .card-edit {
     width: 245px;
-    height: 340px;
+    height: 350px;
     margin: 10px;
     background-color: #ccc;
     border-radius: 15px;
@@ -119,6 +119,8 @@ nav a:hover {
 
 .card-content p {
     margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.47059;
 }
 
 .button {
@@ -132,7 +134,7 @@ nav a:hover {
 
 .aboutme-edit {
     width: 500px;
-    height: 210px;
+    height: 235px;
     margin: 10px;
     background-color: #ccc;
     border-radius: 15px;
@@ -152,11 +154,13 @@ nav a:hover {
 
 .aboutme-content p {
     margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.47059;
 }
 
 .education-edit {
     width: 500px;
-    height: 470px;
+    height: 510px;
     margin: 10px;
     background-color: #ccc;
     border-radius: 15px;
@@ -176,6 +180,8 @@ nav a:hover {
 
 .education-content p {
     margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.47059;
 }
 
 .skill-edit {
@@ -209,7 +215,7 @@ nav a:hover {
 
 .project-edit {
     width: 280px;
-    height: 210px;
+    height: 230px;
     margin: 10px;
     background-color: #ccc;
     border-radius: 15px;
@@ -229,21 +235,23 @@ nav a:hover {
 
 .project-content p {
     margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.47059;
 }
 
 .experience-edit {
     width: 440px;
-    height: 390px;
+    height: 435px;
     margin: 10px;
     background-color: #ccc;
     border-radius: 15px;
 }
 
-.experience-content{
+.experience-content {
     padding: 15px;
 }
 
-.experience-content h3{
+.experience-content h3 {
     display: block;
     padding: 10px 15px;
     background-color: #333;
@@ -251,8 +259,11 @@ nav a:hover {
     border-radius: 15px;
 }
 
-.experience-content p{
+.experience-content p {
     margin-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.47059;
 }
 
 .social-icons {
@@ -260,17 +271,17 @@ nav a:hover {
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 20px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     display: inline-block;
     margin: 0 20px;
     width: 50px;
     height: 50px;
-  }
-  
-  .social-icons img {
+}
+
+.social-icons img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
+}
