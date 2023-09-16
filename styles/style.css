@@ -7,8 +7,8 @@ body {
 #banner {
     background: url('../images/bg.png');
     background-size: cover;
-    background-position: inherit;
-    height: 35vh;
+    background-position:top;
+    height: 15rem;
 }
 
 .banner-text {

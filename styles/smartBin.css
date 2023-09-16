@@ -49,7 +49,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex: 1 2 250px;
+  flex: 1 2 350px;
 }
 .binBox h2 {
   font-size: 2rem;
@@ -57,7 +57,7 @@ button {
 .binBox p {
   font-size: 3rem;
   font-weight: bold;
-  color: #A9FBC3
+  color: #a9fbc3;
 }
 
 .footer {
@@ -71,7 +71,8 @@ button {
 
 /* Dark Mode Changes */
 
-body.dark, body.dark .footer{
+body.dark,
+body.dark .footer {
   background-color: white;
   color: #000000;
 }
@@ -80,17 +81,39 @@ body.dark .binBox p {
   color: #2ec866;
 }
 
-body.dark .binBox, body.dark ul {
+body.dark .binBox,
+body.dark ul {
   border: 3px solid black;
 }
 
-body.dark button{
+body.dark button {
   background-color: black;
   border-width: 2px;
   color: white;
 }
 
-body.dark hr{
+body.dark hr {
   height: 1.5px;
   background-color: black;
+}
+
+@media screen and (max-width: 650px) or (max-height:390px) {
+  .boxes {
+    flex-direction: row;
+  }
+  .binBox {
+    margin: 1rem;
+    width: 30rem;
+    height: 10rem;
+  }
+  .binBox h2 {
+    font-size: 1rem;
+  }
+  .binBox p {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+  .footer{
+    position: fixed
+  }
 }
