@@ -279,6 +279,9 @@ nav a:hover {
     width: 50px;
     height: 50px;
 }
+.social-icons a:hover{
+    transform:scale(1.1)
+}
 
 .social-icons img {
     width: 100%;

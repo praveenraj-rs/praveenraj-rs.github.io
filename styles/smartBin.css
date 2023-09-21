@@ -97,7 +97,7 @@ body.dark hr {
   background-color: black;
 }
 
-@media screen and (max-width: 650px) or (max-height:390px) {
+@media screen and (max-width: 650px) {
   .boxes {
     flex-direction: row;
   }
