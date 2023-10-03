@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --bgColor: hsl(0, 0%, 7%);
+  --navBgColor: hsl(240, 2%, 12%);
+  --boderColor: #6bf8ff;
+  --textColor: #d6d6d6;
+  --headColor: white;
+  --headClick: #7fffd4;
+  --headOver: grey;
+
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 10px;
+
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+
+  z-index: 1;
+}
+
+.navigation {
+  width: 20rem;
+  height: 3rem;
+
+  text-align: center;
+  align-items: center;
+  background-color: var(--navBgColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--boderColor);
+  border-radius: 15px;
+  color: var(--headColor);
+}
+
+
+a {
+  color: inherit;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 15px;
+}
+
+a:hover {
+  color: rgb(197, 197, 197);
+}
+
+a:active{
+  transform: scale(0.9);
+}
+
+a:first-child{
+   color: var(--headClick);
+}
+
+.topic {
+  width: 90%;
+  height: 2.5rem;
+
+  color: white;
+  background-color: var(--navBgColor);
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--boderColor);
+  border-radius: 10px;
+}
+
+.container {
+  width: 90%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+  margin-bottom: 6rem;
+  margin-top: 1rem;
+}
+
+.component {
+  width: 325px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid grey;
+  border-radius: 10px;
+
+  background-color: var(--navBgColor);
+  cursor: pointer;
+}
+
+.component:hover{
+    transform: scale(0.97);
+    transition: all 500ms;
+    box-shadow: var(--headClick) 0px 0px 2px 3px;
+}
+.component:active{
+    transform: scale(1.05);
+    transition: all 500ms;
+}
+
+.component h2 {
+  color: var(--headColor);
+}
+
+
+.component p {
+  width: 80%;
+  font-size: 17px;
+  text-align: center;
+  margin: 0px;
+}
+
+.component ul {
+  width: 80%;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  list-style: none;
+  padding: 0;
+}
+
+.component li {
+  font-size: 0.7em;
+  border: 1px solid var(--boderColor);
+  border-radius: 5px;
+  padding: 5px;
+
+  color: var(--headColor);
+}
+
+@media screen and (max-width:600px) {
+
+  .component{
+    height: max-content;
+  }
+  .component h2{
+    margin-bottom: 0px;
+  }
+  .component p{
+    display: none;
+  }
+  
+}

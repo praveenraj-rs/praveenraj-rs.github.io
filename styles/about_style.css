@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --bgColor: hsl(0, 0%, 7%);
+  --navBgColor: hsl(240, 2%, 12%);
+  --boderColor: #6bf8ff;
+  --textColor: #d6d6d6;
+  --headColor: white;
+  --headClick: #7fffd4;
+  --headOver: grey;
+
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 10px;
+
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+
+  z-index: 1;
+}
+
+.navigation {
+  width: 20rem;
+  height: 3rem;
+
+  text-align: center;
+  align-items: center;
+  background-color: var(--navBgColor);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--boderColor);
+  border-radius: 15px;
+  color: var(--headColor);
+}
+
+
+a {
+  color: inherit;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 15px;
+}
+
+a:hover {
+  color: rgb(197, 197, 197);
+}
+
+a:active{
+  transform: scale(0.9);
+}
+
+a:nth-child(2){
+   color: var(--headClick);
+}
+
+.topic {
+  width: 90%;
+  height: 2.5rem;
+
+  color: white;
+  background-color: var(--navBgColor);
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--boderColor);
+  border-radius: 10px;
+}
+
+.container {
+  width: 90%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+  margin-bottom: 6rem;
+  margin-top: 1rem;
+}
+
+.component {
+  width: 325px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid grey;
+  border-radius: 10px;
+
+  background-color: var(--navBgColor);
+  cursor: pointer;
+}
+
+.component:hover{
+    transform: scale(0.97);
+    transition: all 500ms;
+    box-shadow: var(--headClick) 0px 0px 2px 3px;
+}
+.component:active{
+    transform: scale(1.05);
+    transition: all 500ms;
+}
+
+.component h1 {
+  color: var(--headColor);
+  padding: 0;
+  margin: 0;
+}
+
+.imgComponent{
+  width: 200px;
+  height: 180px;
+}
+
+.imgComponent img{
+  width: 100%;
+}
+
+.component p {
+  width: 80%;
+  text-align: center;
+  margin: 0px;
+}
+
+.socialIcons{
+  width: 325px;
+  border: 2px solid var(--headColor);
+}
+
+.socialComponent{
+  width: 325px;
+  height: 4rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid grey;
+  border-radius: 10px;
+
+  background-color: var(--navBgColor);
+  gap: 1px;
+}
+
+svg{
+  width: 2rem;
+  height: 2rem;
+  color: var(--headClick);
+}
+
+svg:hover{
+  color: var(--headClick);
+  color: white;
+}
