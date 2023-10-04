@@ -6,32 +6,26 @@ let projects = [
     description:
       "Simple and Easy UI to convert the temperature value from one unit to other units",
     tools: ["HTML", "CSS", "Javascript"],
-    link: "https://praveenraj-rs.github.io/",
+    link: "../projects/Calculators/temperature_conversion",
   },
   {
     topic: "BMI Calculator",
     description: "Simple and Easy UI to calculate BMI-Body Mass Index",
     tools: ["HTML", "CSS", "Javascript"],
-    link: "https://praveenraj-rs.github.io/",
+    link: "../projects/Calculators/BMI",
   },
   {
     topic: "Tic-Tac-Toe",
     description: "Play the classic Tic-Tac-Toe game online with two players.",
     tools: ["HTML", "CSS", "Javascript"],
-    link: "https://praveenraj-rs.github.io/",
+    link: "../projects/TicTacToe",
   },
   {
     topic: "ToDo List",
     description: "List the tasks that you need to complete.It stores it in localstorage",
     tools: ["HTML", "CSS", "Javascript"],
-    link: "https://praveenraj-rs.github.io/ToDo_List/index.html",
+    link: "../projects/ToDo_List",
   },
-  {
-    topic: "SmartBin Control",
-    description: "Under Development",
-    tools: ["HTML", "CSS", "Javascript"],
-    link: "https://praveenraj-rs.github.io/ToDo_List/index.html",
-  }
   
 ];
 

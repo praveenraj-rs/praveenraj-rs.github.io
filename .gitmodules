@@ -1,3 +1,12 @@
 [submodule "ToDo_List"]
 	path = ToDo_List
 	url = https://github.com/praveenraj-rs/ToDo_List.git
+[submodule "projects/Calculators"]
+	path = projects/Calculators
+	url = https://github.com/praveenraj-rs/Calculators.git
+[submodule "projects/TicTacToe"]
+	path = projects/TicTacToe
+	url = https://github.com/praveenraj-rs/TicTacToe.git
+[submodule "projects/ToDo_List"]
+	path = projects/ToDo_List
+	url = https://github.com/praveenraj-rs/ToDo_List.git
