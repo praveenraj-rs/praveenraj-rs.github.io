@@ -5,7 +5,7 @@ let projects = [
     topic: "Temperature Conversion",
     description: "Intuitive UI for effortless temperature unit conversion.",
     tools: ["HTML", "CSS", "Javascript"],
-    link: "../projects/Calculators/temperature_conversion",
+    link: "../projects/Calculators/Temperature_Conversion",
   },
   {
     topic: "BMI Calculator",
