@@ -3,30 +3,28 @@ let container = document.querySelector(".container");
 let projects = [
   {
     topic: "Temperature Conversion",
-    description:
-      "Simple and Easy UI to convert the temperature value from one unit to other units",
+    description: "Intuitive UI for effortless temperature unit conversion.",
     tools: ["HTML", "CSS", "Javascript"],
     link: "../projects/Calculators/temperature_conversion",
   },
   {
     topic: "BMI Calculator",
-    description: "Simple and Easy UI to calculate BMI-Body Mass Index",
+    description: "Elegant UI for quick and easy BMI calculation.",
     tools: ["HTML", "CSS", "Javascript"],
     link: "../projects/Calculators/BMI",
   },
   {
     topic: "Tic-Tac-Toe",
-    description: "Play the classic Tic-Tac-Toe game online with two players.",
+    description: "Engage in classic online Tic-Tac-Toe with a friend.",
     tools: ["HTML", "CSS", "Javascript"],
     link: "../projects/TicTacToe",
   },
   {
     topic: "ToDo List",
-    description: "List the tasks that you need to complete.It stores it in localstorage",
+    description: "Manage tasks efficiently and store them in local storage.",
     tools: ["HTML", "CSS", "Javascript"],
     link: "../projects/ToDo_List",
   },
-  
 ];
 
 function projectDisplay() {
