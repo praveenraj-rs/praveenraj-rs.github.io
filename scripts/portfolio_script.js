@@ -25,6 +25,13 @@ let projects = [
     tools: ["HTML", "CSS", "Javascript"],
     link: "../projects/ToDo_List",
   },
+  {
+    topic: "Weather App",
+    description:
+      "Simple weather application to check the weather condition of your city.",
+    tools: ["HTML", "CSS", "Javascript"],
+    link: "../projects/Weather_App",
+  },
 ];
 
 function projectDisplay() {

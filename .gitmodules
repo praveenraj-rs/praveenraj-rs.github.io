@@ -10,3 +10,6 @@
 [submodule "projects/ToDo_List"]
 	path = projects/ToDo_List
 	url = https://github.com/praveenraj-rs/ToDo_List.git
+[submodule "projects/Weather_App"]
+	path = projects/Weather_App
+	url = git@github.com:praveenraj-rs/Weather_App.git
