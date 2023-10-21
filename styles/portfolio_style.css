@@ -11,7 +11,6 @@
   --headColor: white;
   --headClick: #7fffd4;
   --headOver: grey;
-
 }
 
 body {
@@ -43,7 +42,7 @@ nav {
 }
 
 .navigation {
-  width: 20rem;
+  width: 22rem;
   height: 3rem;
 
   text-align: center;
@@ -57,8 +56,10 @@ nav {
   border: 2px solid var(--boderColor);
   border-radius: 15px;
   color: var(--headColor);
-}
 
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
 
 a {
   color: inherit;
@@ -66,18 +67,19 @@ a {
   font-weight: bold;
   text-decoration: none;
   margin: 15px;
+  transition: all 500ms;
 }
 
 a:hover {
   color: rgb(197, 197, 197);
 }
 
-a:active{
+a:active {
   transform: scale(0.9);
 }
 
-a:first-child{
-   color: var(--headClick);
+a:first-child {
+  color: var(--headClick);
 }
 
 .topic {
@@ -126,22 +128,32 @@ a:first-child{
 
   background-color: var(--navBgColor);
   cursor: pointer;
+
+  transition: all 500ms;
+  animation: zoomIn 500ms ease;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
-.component:hover{
-    transform: scale(0.97);
-    transition: all 500ms;
-    box-shadow: var(--headClick) 0px 0px 2px 3px;
+.component:hover {
+  transform: scale(0.97);
+  transition: all 500ms;
+  box-shadow: var(--headClick) 0px 0px 2px 3px;
 }
-.component:active{
-    transform: scale(1.05);
-    transition: all 500ms;
+.component:active {
+  transform: scale(1.05);
+  transition: all 500ms;
 }
 
 .component h2 {
   color: var(--headColor);
 }
-
 
 .component p {
   width: 80%;
@@ -174,16 +186,14 @@ a:first-child{
   color: var(--headColor);
 }
 
-@media screen and (max-width:600px) {
-
-  .component{
+@media screen and (max-width: 600px) {
+  .component {
     height: max-content;
   }
-  .component h2{
+  .component h2 {
     margin-bottom: 0px;
   }
-  .component p{
+  .component p {
     display: none;
   }
-  
 }

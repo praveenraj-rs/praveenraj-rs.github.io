@@ -11,7 +11,6 @@
   --headColor: white;
   --headClick: #7fffd4;
   --headOver: grey;
-
 }
 
 body {
@@ -43,7 +42,7 @@ nav {
 }
 
 .navigation {
-  width: 20rem;
+  width: 22rem;
   height: 3rem;
 
   text-align: center;
@@ -59,25 +58,25 @@ nav {
   color: var(--headColor);
 }
 
-
 a {
   color: inherit;
   font-size: large;
   font-weight: bold;
   text-decoration: none;
   margin: 15px;
+  transition: all 500ms;
 }
 
 a:hover {
   color: rgb(197, 197, 197);
 }
 
-a:active{
+a:active {
   transform: scale(0.9);
 }
 
-a:nth-child(2){
-   color: var(--headClick);
+a:nth-child(2) {
+  color: var(--headClick);
 }
 
 .topic {
@@ -127,16 +126,27 @@ a:nth-child(2){
 
   background-color: var(--navBgColor);
   cursor: pointer;
+
+  transition: all 500ms;
+  animation: zoomIn 500ms ease;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
-.component:hover{
-    transform: scale(0.97);
-    transition: all 500ms;
-    box-shadow: var(--headClick) 0px 0px 2px 3px;
+.component:hover {
+  transform: scale(0.97);
+  transition: all 500ms;
+  box-shadow: var(--headClick) 0px 0px 2px 3px;
 }
-.component:active{
-    transform: scale(1.05);
-    transition: all 500ms;
+.component:active {
+  transform: scale(1.05);
+  transition: all 500ms;
 }
 
 .component h1 {
@@ -145,12 +155,12 @@ a:nth-child(2){
   margin: 0;
 }
 
-.imgComponent{
+.imgComponent {
   width: 200px;
   height: 180px;
 }
 
-.imgComponent img{
+.imgComponent img {
   width: 100%;
 }
 
@@ -160,12 +170,12 @@ a:nth-child(2){
   margin: 0px;
 }
 
-.socialIcons{
+.socialIcons {
   width: 325px;
   border: 2px solid var(--headColor);
 }
 
-.socialComponent{
+.socialComponent {
   width: 325px;
   height: 4rem;
 
@@ -179,15 +189,18 @@ a:nth-child(2){
 
   background-color: var(--navBgColor);
   gap: 1px;
+
+  animation: zoomIn 500ms ease;
 }
 
-svg{
+svg {
   width: 2rem;
   height: 2rem;
   color: var(--headClick);
+  transition: all 500ms;
 }
 
-svg:hover{
+svg:hover {
   color: var(--headClick);
   color: white;
 }
