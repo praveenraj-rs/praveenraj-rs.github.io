@@ -32,6 +32,12 @@ let projects = [
     tools: ["HTML", "CSS", "Javascript"],
     link: "../projects/Weather_App",
   },
+  {
+    topic: "HexFuse Page",
+    description: "Contributed to HexFuse landing page.",
+    tools: ["ReactJs"],
+    link: "https://hexfuse.github.io",
+  },
 ];
 
 function projectDisplay() {
