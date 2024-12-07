@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "Caveat";
+  src: url(assets/fonts/Caveat-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Caveat";
+  src: url(assets/fonts/Caveat-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #f7f7f7;
+  --text-color: #000000;
+  --line-color: #000000;
+  --content-color: #cdcdcd;
+  --svg-fill: #1b1b1b;
+  --human_logo_fill: white;
+  --human_logo_stroke: black;
+  --bg-img: None;
+}
+
+/* Dark mode */
+.dark-theme {
+  --bg-color: #2b2b2b;
+  --text-color: #ffffff;
+  --line-color: #ffffff;
+  --content-color: #3c3c3c;
+  --svg-fill: white;
+  --human_logo_fill: var(--bg-color);
+  --human_logo_stroke: white;
+  --bg-img: url(assets/images/batman.svg);
+}
+
+body {
+  font-family: "Caveat";
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  color: var(--text-color);
+}
+
+body h1 {
+  font-size: 48px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--line-color);
+  margin-top: 0;
+}
+.nav_selection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin: 5px;
+}
+.nav_selection p {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 22px;
+}
+
+nav img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav .svg {
+  padding-left: 20px;
+  padding-right: 20px;
+  fill: var(--svg-fill);
+}
+
+.nav_selection a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.social .svg {
+  fill: var(--svg-fill);
+  margin: 8px;
+  cursor: pointer;
+}
+
+.page {
+  height: 100vh;
+  padding-top: 60px;
+  padding: 20px;
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.content_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--content-color);
+  padding: 20px;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
+}
+.content_box h1 {
+  margin-bottom: 0;
+}
+
+.content_box p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.human_logo {
+  fill: var(--human_logo_fill);
+  stroke: var(--human_logo_stroke);
+  box-shadow: inset;
+}
+
+.active-link {
+  background-color: var(--content-color);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--content-color);
+}
+.about-page .content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+.about-page h1 {
+  margin: 0;
+}
+
+.about-page p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.resume-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.education,
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-education,
+.sub-experience {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sub-education div,
+.sub-experience div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.education h1,
+.experience h1 {
+  margin-top: 0;
+}
+
+.education h2 {
+  margin-bottom: 0;
+  font-size: 32px;
+  margin: 0;
+}
+.education p {
+  margin: 0;
+  font-size: 24px;
+}
+.experience h2 {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 32;
+}
+.experience p {
+  margin: 0;
+  font-size: 24px;
+}
+
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--content-color);
+}
+
+.projects-page div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.projects-page h1 {
+  margin: 0;
+}
+
+.projects-page a {
+  font-size: 32px;
+  color: var(--text-color);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav_selection {
+    display: none;
+  }
+
+  #themeToggle {
+    display: none;
+  }
+
+  .home-page {
+    /* height: 90vh; */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content_box {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content_box section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .content_box p {
+    text-align: center;
+  }
+
+  .human_logo {
+    padding: 20px;
+  }
+
+  .about-page p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about_contentbox {
+    margin: 0;
+    padding: 0;
+  }
+  .about-page .content-box {
+    padding: 0;
+  }
+  .about_contentbox section {
+    display: none;
+  }
+
+  .resume-page {
+    height: max-content;
+  }
+
+  .sub-education,
+  .sub-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-page a {
+    font-size: 24px;
+  }
+}
