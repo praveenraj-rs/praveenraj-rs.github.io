@@ -171,6 +171,33 @@ nav .svg {
   font-size: 32px;
   margin: 0;
 }
+.weblog-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.weblog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 10px;
+  padding-right: 20px;
+  /* background-color: var(--bg-color); */
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  border: 2px solid var(--human_logo_stroke);
+  cursor: pointer;
+}
+.weblog p {
+  font-size: 24px;
+}
+.weblog .svg {
+  fill: var(--svg-fill);
+}
 
 .resume-page {
   display: flex;
@@ -301,6 +328,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .content_box section {
     display: flex;

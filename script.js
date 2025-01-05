@@ -13,6 +13,9 @@ document.getElementById("instagram-icon").addEventListener("click", () => {
 document.getElementById("linkedin-icon").addEventListener("click", () => {
   window.open("https://www.linkedin.com/in/praveenrajrs/", "_blank");
 });
+document.getElementById("weblog").addEventListener("click", () => {
+  window.open("https://my-weblog.vercel.app", "_blank");
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section.page");
